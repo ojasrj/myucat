@@ -1,0 +1,21 @@
+
+.col {
+  padding: 10px;
+}
+.input-group-text {
+  width: 250px;
+}
+
+.list-group {
+  font-size:120%;
+}
+
+.label {
+  width: 250px;
+  display:inline-block;
+}
+
+#total {
+  font-size: 140%;
+  display:inline-block;
+}
