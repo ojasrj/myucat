@@ -1,5 +1,55 @@
 <html>
-<h1>///....///</h1>
-  <h2>this is meant to be a full on website with ucat group classes and a score converter on the homepage</h2>
-  <h3>Ojas</h3>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>
+        UCAT Score Converter
+      </h1>
+      <h2> Please fill in the boxes with the number of correctly answered questions. If you have completed a different number of questions, then please calculate a percentage and multiply through (vr: 44, qr: 36, dm: 29, ar: 55). </h2>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Verbal Reasoning Score</span>
+        </div>
+        <input type="text" class="form-control" placeholder="from 0 to 44" aria-label="Verbal Reasoning Score" aria-describedby="basic-addon1" id="vr">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2">Decision Making Score</span>
+        </div>
+        <input type="text" class="form-control" placeholder="from 0 to 29" aria-label="Decision Making Score" aria-describedby="basic-addon2" id="dm">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">Quantitative Reasoning Score</span>
+        </div>
+        <input type="text" class="form-control" placeholder="from 0 to 36" aria-label="Quantitative Reasoning Score" aria-describedby="basic-addon3" id="qr">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon4">Abstract Reasoning Score</span>
+        </div>
+        <input type="text" class="form-control" placeholder="from 0 to 55" aria-label="Abstract Reasoning Score" aria-describedby="basic-addon4" id="ar">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+    <ul class="list-group">
+    <li class="list-group-item"><center><b>Calculated Scores:</b></center></li>
+  <li class="list-group-item"><span class="label">Verbal Reasoning:</span> <span class="badge badge-primary badge-pill" id="vr_t">?</span></li>
+  <li class="list-group-item"><span class="label">Decision Making:</span> <span class="badge badge-primary badge-pill" id="dm_t">?</span></li>
+  <li class="list-group-item"><span class="label">Quantitative Reasoning:</span> <span class="badge badge-primary badge-pill" id="qr_t">?</span></li>
+  <li class="list-group-item"><span class="label">Abstract Reasoning:</span> <span class="badge badge-primary badge-pill" id="ar_t">?</span></li>
+  <li class="list-group-item active"><span class="label">Total:</span> <b id="total">-</b></li>
+</ul>
+    </div>
+  </div>
+</div>
+
 </html>
