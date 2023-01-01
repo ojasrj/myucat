@@ -1,3 +1,4 @@
+
 $(function() {
   function recalc() {
     var total = 0,
@@ -7,7 +8,7 @@ $(function() {
       ar = 0,
       cnt = 0;
 
-    var v = parseInt($("#vr").val().trim())
+    var v = parseInt($("#vr").val().trim());
     if (v <= 5) vr = 300;
     else if (v <= 7) vr = 330;
     else if (v <= 8) vr = 350;
@@ -35,11 +36,11 @@ $(function() {
     else if (v <= 44) vr = 900;
 
     if (!v || v < 0 || v > 44) vr = "?";
-    else cnt += 1
-    $("#vr_t").text(vr)
+    else cnt += 1;
+    $("#vr_t").text(vr);
 
 
-    v = parseInt($("#dm").val().trim())
+    v = parseInt($("#dm").val().trim());
     if (v <= 3) dm = 300;
     else if (v <= 4) dm = 330;
     else if (v <= 5) dm = 350;
@@ -67,10 +68,10 @@ $(function() {
     else if (v <= 29) dm = 900;
 
     if (!v || v < 0 || v > 29) dm = "?";
-    else cnt += 1
-    $("#dm_t").text(dm)
+    else cnt += 1;
+    $("#dm_t").text(dm);
 
-    v = parseInt($("#qr").val().trim())
+    v = parseInt($("#qr").val().trim());
 
     if (v <= 3) qr = 300;
     else if (v <= 5) qr = 330;
@@ -99,10 +100,10 @@ $(function() {
     else if (v <= 36) qr = 900;
 
     if (!v || v < 0 || v > 36) qr = "?";
-    else cnt += 1
-    $("#qr_t").text(qr)
+    else cnt += 1;
+    $("#qr_t").text(qr);
 
-    v = parseInt($("#ar").val().trim())
+    v = parseInt($("#ar").val().trim());
     if (v <= 5) ar = 300;
     else if (v <= 7) ar = 330;
     else if (v <= 9) ar = 350;
@@ -130,14 +131,14 @@ $(function() {
     else if (v <= 55) ar = 900;
 
     if (!v || v < 0 || v > 55) ar = "?";
-    else cnt += 1
-    $("#ar_t").text(ar)
+    else cnt += 1;
+    $("#ar_t").text(ar);
 
-    if (cnt > 3) $("#total").text(parseInt((ar + qr + dm + vr) / 4))
+    if (cnt > 3) $("#total").text(parseInt((ar + qr + dm + vr) / 4));
 
   }
 
-  $("#vr, #dm, #qr, #ar").change(recalc)
-  $("#vr, #dm, #qr, #ar").keyup(recalc)
+  $("#vr, #dm, #qr, #ar").change(recalc);
+  $("#vr, #dm, #qr, #ar").keyup(recalc);
 
 })
